@@ -63,6 +63,9 @@ function balanced_bracket(input) {
     }
   }
 
+  if (current_open_token != 0) {
+    is_balanced = "NO";
+  }
   return is_balanced;
 }
 
@@ -82,3 +85,4 @@ function return_reverse_token(current_token) {
 console.log(balanced_bracket("{[()]}"));
 console.log(balanced_bracket("{[(])}"));
 console.log(balanced_bracket("{(([])[])[]}"));
+console.log(balanced_bracket("{(([])[])[]"));
